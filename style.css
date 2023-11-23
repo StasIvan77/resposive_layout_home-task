@@ -157,7 +157,12 @@ header {
       
  }      
       
-
+ @media screen and (min-width: 359px) and (max-width: 540px) {
+  .grid-item {    
+    width: 120px;
+    height: 120px;
+  }
+ }
 
 @media (max-width: 360px) {
     header .left-section {
