@@ -1,8 +1,184 @@
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.section {
+    border: 1px solid #000;
+    
+}
+
+.text-default {    
+    font-size: 30px;
+    text-align: center;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 10px 0 10px 0;
+    
+}
+
+.text-in-image {
+        color: rgb(255, 255, 255);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     padding: 20px;
 }
+
+.grid-container {
+      display: grid;    
+      
+      grid-template-columns: repeat(auto-fit, minmax( 24%, 1fr ));      
+      gap: 10px;
+      justify-items: center;
+}
+
+.grid-container-main-block {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  justify-items: center;
+
+}
+
+.grid-container-company {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.grid-item {    
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #0000005e;
+    
+  }
+
+  .grid-item img {
+    
+    object-fit: cover; 
+      object-position: 50% 50%;
+    
+    
+  }
+
+  .grid-container-boxes {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* використав пропорцію 1/3 на 2/3 */
+    justify-content: center;
+    gap: 10px;
+    justify-items: center;   
+}
+  
+
+  .main-blocks-style {
+    background-color: rgb(48, 29, 189);
+    width: 100%; 
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+  .contacts-box-style {
+    background-color: rgb(189, 29, 178);
+    width: 100%; 
+    height: 600px;
+    margin-bottom: 10px;
+  }
+
+  .nav-style {
+    background-color: rgb(21, 220, 44);
+    width: 100%;
+    height: 10em;
+    font-size: 20px;
+  }
+
+  h1, h2 ,h3, h4, h5, h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  ul, li {
+    font-size: 15px;
+    margin: 0px;
+  }
+
+@media screen and (min-width: 1024px) {   
+    
+      header .left-section {
+        width: 10%;
+        text-align: right;
+      }
+    
+      header .right-section {
+        width: 90%;
+      }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+    header .left-section {
+        width: 10%;
+        text-align: left;
+      }
+    
+      header .right-section {
+        width: 90%;
+      }
+
+/* для правильності завдання порядковості міняю орієнтацію таблички*/
+      .grid-container {
+        grid-auto-flow: column; 
+        grid-template-rows: 2fr 2fr; 
+        
+
+      }
+
+      .grid-container-main-block, .grid-container-company {
+        grid-template-columns: 1fr;
+      }
+
+
+      .grid-item-name:nth-child(2) {
+        height: 200px;
+      }
+      
+      
+    }      
+      
+
+
+@media (max-width: 360px) {
+    header .left-section {
+        width: 70%;
+        text-align: left;
+      }
+    
+      header .right-section {
+        width: 30%;
+      }
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        
+      }
+      .grid-container-boxes  {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .grid-container-main-block, .grid-container-company {
+        grid-template-columns: 1fr;
+      }
+      
+      
+    }

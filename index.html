@@ -4,21 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML, CSS</title>
-    <meta name="description" content="HTML + CSS practice">
+    <meta name="description" content="HTML + CSS home task">
     <meta name="author" content="Ivan Stasiv">
     <meta name="keywords" content="Home task. Responsive Layout">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--  Header реалізація за допомогою flexbox  -->
+    <h1 id="home">Home</h1> 
+    <header>           
+        <div class="left-section section text-default" style="background-color: rgb(39, 207, 10)">
+            1.1
+        </div>
+        <div class="right-section section text-default" style="background-color: rgb(207, 53, 10)">
+            1.2
+        </div>      
+    </header>
 
-<header>
-    
-</header>
+    <!--  Gallery  -->
+    <!--  Реалізував через фіксовану картинку для розуміння,
+         що картинка нерескейлиться, а у такову вигляді
+          як повинна бути відповідно до заданих розмірів grid-item  -->
+    <h2 id="whatWeDO">What we do</h2> 
+    <section class="section grid-container" style="background-color: aquamarine; margin-bottom: 10px;">        
+            <div class="grid-item" style="background: url('https://placehold.co/200x200') no-repeat center center; background-size: cover;">
+                <p class="text-default text-in-image">2.1</p>                
+            </div>
+            <div class="grid-item" style="background: url('https://placehold.co/200x200') no-repeat center center; background-size: cover;">
+                <p class="text-default text-in-image" >2.2</p>                
+            </div>
+            <div class="grid-item" style="background: url('https://placehold.co/200x200') no-repeat center center; background-size: cover;">
+                <p class="text-default text-in-image">2.3</p>                
+            </div>
+            <div class="grid-item" style="background: url('https://placehold.co/200x200') no-repeat center center; background-size: cover;">
+                <p class="text-default text-in-image">2.4</p>                
+            </div>
+          
+    </section>
 
-<main>
+    <!--  Section 3. Використовую Grid замість flexbox(як у header) -->
+    <h3 id="whatWeDO">What we do</h3> 
+    <section class="grid-container-boxes" style="margin-bottom: 10px;">        
+        <div class="section text-default" style="background-color: rgb(191, 207, 10); width: 100%;">
+            3.1
+        </div>
+        <div class="section text-default" style="background-color: rgb(223, 255, 62); width: 100%;">
+            3.2
+        </div> 
+    </section>
+
+    <!--  Section 4-6 -->
+    <h4 id="ourCompany">Our company</h4>
+    <section class="grid-container-main-block">        
+        <div class="grid-item-name" style="width: 100%; ">
+            <div class="section text-default main-blocks-style">
+                4.1
+            </div>
+            <section class="grid-container-company">
+                <div class="section text-default main-blocks-style">
+                    4.2
+                </div>
+                <div class="section text-default main-blocks-style">
+                    4.3
+                </div>
+            </section>
+            <h5 id="contacts">Contact us</h5>
+            <div class="section text-default contacts-box-style">
+                5
+            </div>
+            
+        </div>
+        
+
+        <div class="grid-item-name section text-default nav-style">
+            <p class="text-default" style="margin: 0; line-height: 1;">6</p>
+            <h6>Navigation list</h6>
+                <nav>
+                    <ul style="text-align: left;">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#whatWeDO">What we do</a></li>
+                        <li><a href="#ourCompany">Our company</a></li>
+                        <li><a href="#contacts">Contacts us</a></li>
+                        <li><a href="#more">More?</a></li>
+                    </ul>
+                </nav>
+        </div> 
+    </section>
+
+    <!--  Section 7 -->
+    <h6 id="more">More?</h6>
+
+    <div class="section text-default" style="background-color: rgb(10, 207, 177); width: 100%;">
+        7
+    </div>
+
 
    
-</main>
+
+
 
 <footer>
     <p>&copy; 2023</p>
