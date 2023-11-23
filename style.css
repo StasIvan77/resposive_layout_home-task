@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 20px;
+}
 
 header {
     display: flex;
@@ -25,15 +33,6 @@ header {
 
 .text-in-image {
         color: rgb(255, 255, 255);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0px;
-    padding: 20px;
 }
 
 .grid-container {
@@ -156,7 +155,7 @@ body {
       }
       
       
-    }      
+ }      
       
 
 
@@ -179,6 +178,4 @@ body {
       .grid-container-main-block, .grid-container-company {
         grid-template-columns: 1fr;
       }
-      
-      
-    }
+}
